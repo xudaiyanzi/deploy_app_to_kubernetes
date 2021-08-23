@@ -4,8 +4,8 @@ version: 0.2
 
 phases:
   install:
-    # giruntime-versions:
-      python: 3.7
+    # runtime-versions:
+      # python: 3.7
     commands:
       - echo 'about to call dockerd'
       - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://127.0.0.1:2375 --storage-driver=overlay2&
