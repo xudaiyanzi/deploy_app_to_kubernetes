@@ -19,7 +19,7 @@ phases:
       - echo `kubectl version`
       - export PATH=$PWD/:$PATH
       # install pip
-      - python3 get-pip.py
+      - apt-get install python3-pip
       - python3 -m pip install --upgrade --force pip
       - apt-get update && apt-get -y install jq  && pip install --upgrade awscli
   pre_build:
