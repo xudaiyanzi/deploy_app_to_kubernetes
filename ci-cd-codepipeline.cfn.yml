@@ -9,7 +9,7 @@ Parameters:
   EksClusterName:
     Type: String
     Description: The name of the EKS cluster created
-    Default: project
+    Default: simple-jwt-api
     MinLength: 1
     MaxLength: 100
     ConstraintDescription: You must enter the EKS cluster name
@@ -48,7 +48,7 @@ Parameters:
 
   CodeBuildDockerImage:
     Type: String
-    Default: aws/codebuild/docker:17.09.0
+    Default: aws/codebuild/standard:4.0
     Description: Default AWS CodeBuild Docker optimized image
     MinLength: 3
     MaxLength: 100
